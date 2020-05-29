@@ -9,8 +9,8 @@ import calendar
 import pandas as pd, numpy as np
 
 
-__input__ = 'template.xlsx'
-__output__ = 'output.xlsx'
+__input__ = 'template example.xlsx'
+__output__ = 'output example.xlsx'
 
 
 
@@ -50,8 +50,7 @@ def main():
 
     with pd.ExcelWriter(__output__) as writer:
         prorated_rent.to_excel(writer, sheet_name = 'prorated rent')
-        # mean_rent.to_excel(writer, sheet_name = 'average rent')
-        # sum_rent.to_excel(writer, sheet_name = 'total rent')
+
 
 
 if __name__ == '__main__':
@@ -59,4 +58,4 @@ if __name__ == '__main__':
     with open('desc.txt') as f:
         print(f.read())
 
-    # main()
+    main()
