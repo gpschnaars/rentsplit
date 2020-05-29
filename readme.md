@@ -1,8 +1,27 @@
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~    INSTRUCTIONS    ~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1. Clone repository
+2. Use pip to install requirements.txt (i.e. `> pip install requirements.txt`)
+3. Update `template example.xlsx` with new tenants, and fill out details
+   (See description below for further explanation of the template)
+4. Run main script (i.e. `python main.py`)
+5. Results will be in the newly created `output.xlsx`
+
+
+Note:  Be sure to close the `output.xlsx` file before running again.  The template
+       can remain open, but be sure to save for changes to be included.
+
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~     TEMPLATE     ~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ** SHEET 1 **
+
+New rows (i.e. additional tenants) can be added by just filling out a new row.
 
 <prorate_factor> is used to quantify relative payment amounts.
 Rather than implement fractions, which are dependent on the amount of active tenant for a given month,
