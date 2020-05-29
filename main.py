@@ -1,7 +1,7 @@
 """
 simple pandas script to calcualte monthly rent amounts.
 
-see desc.txt or readme.md for a description
+see readme.md for a description
 
 """
 
@@ -9,13 +9,13 @@ import calendar
 import pandas as pd, numpy as np
 
 
-__input__ = 'template example.xlsx'
-__output__ = 'output example.xlsx'
+__input__ = 'template.xlsx'
+__output__ = 'output.xlsx'
 
 
 
 def normalize(l):
-    # normalize list on float on sum 
+    # normalize list of float on sum 
     return [i/sum(l) for i in l]
 
 
@@ -23,7 +23,6 @@ def normalize(l):
 def main():
 
     df = pd.read_excel(__input__).set_index('members', drop = True)
-    df.columns = [item for item in df.columns]
 
     metrics = pd.read_excel(__input__, names = ['metric', 'value'], header = None, sheet_name = 1).set_index('metric').value
 
