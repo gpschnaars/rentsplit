@@ -55,7 +55,7 @@ def main():
 
 if __name__ == '__main__':
 
-    with open('desc.txt') as f:
+    with open('readme.md') as f:
         print(f.read())
 
     main()
